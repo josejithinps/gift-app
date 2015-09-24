@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/button"
+        
+        /> 
+<Button 
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/scratch"
+        
+        
+        /> 
+</LinearLayout>
+<!-- From: file:/Users/catalina/Desktop/Gift%20Xchange_sound_added/Gift%20Exchange/app/src/main/res/layout/mail_layout.xml -->

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutGiftBoxPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+    <!-- Wrapper View -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp">
+
+    <ImageView
+        android:id="@+id/imageWrapperSelected"
+        android:layout_width="203dp"
+        android:layout_height="300dp"
+        android:background="#DAA520"
+        android:padding="5dp" />
+
+    <View
+        android:id="@+id/overlay_wrapper"
+        android:layout_width="203dp"
+        android:layout_height="300dp"
+        android:alpha="0.6"
+        android:background="#D3D3D3"
+        android:visibility="gone" />
+
+        <com.Catalina.utilities.CircleButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/buttonEditWrapper"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@id/imageWrapperSelected"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_edit"
+            android:visibility="gone"
+            app:cb_color="@color/button_circle_background"
+            app:cb_pressedRingWidth="8dip" />
+
+        <com.Catalina.utilities.CircleButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/buttonCloseWrapper"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@id/overlay_wrapper"
+            android:src="@drawable/ic_close_button"
+            android:visibility="gone"
+            app:cb_color="@color/button_circle_background"
+            app:cb_pressedRingWidth="4dip" />
+
+    </RelativeLayout>
+
+
+    <!-- Gift View -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp">
+    <ImageView
+        android:id="@+id/imageGiftSelected"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#DAA520"
+        android:padding="5dp" />
+
+    <View
+        android:id="@+id/overlay_gift"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:alpha="0.6"
+        android:background="#D3D3D3"
+        android:visibility="gone"/>
+
+        <com.Catalina.utilities.CircleButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/buttonEditGift"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_edit"
+            android:visibility="gone"
+            app:cb_color="@color/button_circle_background"
+            app:cb_pressedRingWidth="8dip"
+            />
+
+        <com.Catalina.utilities.CircleButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/buttonCloseGift"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@id/overlay_gift"
+            android:src="@drawable/ic_close_button"
+            android:visibility="gone"
+            app:cb_color="@color/button_circle_background"
+            app:cb_pressedRingWidth="4dip" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

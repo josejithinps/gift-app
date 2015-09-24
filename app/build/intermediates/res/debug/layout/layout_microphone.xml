@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_microphone"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    >
+    <View
+        android:layout_width="500dp"
+        android:layout_height="10dp"
+        android:background="@color/offers_content_number_text"/>
+
+
+    <ImageView
+        android:id="@+id/image_microphone"
+        android:layout_marginTop="1dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/ic_vintage_mic"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="microphone" />
+
+    <TextView
+        android:id="@+id/micInstructionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mic_instruction"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="#A9A9A9"
+        android:textSize="17dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/layoutTimerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="@string/textview_record_time_left"/>
+
+        <TextView
+            android:id="@+id/textViewRecordTimeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:textSize="18dp"
+            android:text=""
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:background="@drawable/ic_next"
+        />
+
+</LinearLayout><!-- From: file:/Users/catalina/Desktop/Gift%20Xchange_sound_added/Gift%20Exchange/app/src/main/res/layout/layout_microphone.xml -->

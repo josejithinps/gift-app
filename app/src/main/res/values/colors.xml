@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- Offers Colors -->
+    <color name="offers_tab_title">#ffffff</color>
+    <color name="offers_tab_offer_number">#ffffff</color>
+    <color name="offers_swipe_hint">#ffffff</color>
+    <color name="offers_image_background">#e5e6e7</color>
+    <color name="offers_image_background_white">#ffffff</color>
+    <color name="offers_image_text">#666666</color>
+    <color name="offers_content_number_text">#f98a2f</color>
+
+    <color name="button_circle_background">#ffffff</color>
+    
+</resources>

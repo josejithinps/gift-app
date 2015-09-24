@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <com.Catalina.wrapper.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:panelHeight="68dp"
+        sothree:shadowHeight="0dp" >
+
+        <!-- MAIN CONTENT -->
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                 >
+            </GridView>
+
+            <TextView
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="Main Content"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- SLIDING LAYOUT -->
+
+
+
+        <LinearLayout
+            android:id="@+id/dragView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="false"
+            android:orientation="vertical" >
+
+            <!--<View-->
+                <!--android:id="@+id/stub"-->
+                <!--android:background="@drawable/ic_microphone"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:visibility="gone"/>-->
+            <LinearLayout
+                android:id="@+id/layoutRecordPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+                <include
+                    android:id="@+id/recordPanelContainer"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    layout="@layout/layout_microphone"
+                    />
+            </LinearLayout>
+
+
+            <!--
+                 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/blue_strip_square" >
+                </ImageView>
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/handle"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/blue_strip_square"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/handleInstruction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Select Gift Now"
+                        android:textColor="#ffffff"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_launcher" >
+            </ImageView>
+            -->
+
+            <com.Catalina.wrapper.CatalinaHorizontalScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/offers_content_horizontallscroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/offers_hint_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/g_my_offers_bkg_w_arrow"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/offers_swipe_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/offer_tab_text_you" />
+
+                        <TextView
+                            android:id="@+id/offer_content_offers_numbers"
+                            style="@style/offers_content_number"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:text="@string/offer_numbers"
+                            android:textIsSelectable="false" />
+
+                        <TextView
+                            style="@style/offers_swipe_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:text="@string/offer_tab_text_personalized" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/i_my_offers_swipe_arrow" />
+
+                        <TextView
+                            style="@style/offers_swipe_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:text="@string/offer_tab_text_swipe" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/offer_tab_offers_linearlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/offers_image_background_white"
+                        android:orientation="horizontal"
+                        android:padding="10dp" >
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:src="@drawable/wrapper1" />
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:src="@drawable/wrapper2" />
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:src="@drawable/wrapper3" />
+
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:src="@drawable/wrapper4" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.Catalina.wrapper.CatalinaHorizontalScrollView>
+        </LinearLayout>
+    </com.Catalina.wrapper.SlidingUpPanelLayout>
+
+</RelativeLayout><!-- From: file:/Users/catalina/Desktop/Gift%20Xchange_sound_added/Gift%20Exchange/app/src/main/res/layout/activity_main.xml -->

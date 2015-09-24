@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.catalina.giftwrapper.CatalinaHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offers_content_horizontallscroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/offers_hint_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/g_my_offers_bkg_w_arrow"
+            android:orientation="vertical"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/offers_swipe_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/offer_tab_text_you" />
+
+            <TextView
+                android:id="@+id/offer_content_offers_numbers"
+                style="@style/offers_content_number"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                style="@style/offers_swipe_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/offer_tab_text_personalized" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/i_my_offers_swipe_arrow" />
+
+            <TextView
+                style="@style/offers_swipe_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/offer_tab_text_swipe" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/offer_tab_offers_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/offers_image_background"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ProgressBar
+                android:id="@+id/offers_progress_bar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/offers_image_background" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.catalina.giftwrapper.CatalinaHorizontalScrollView><!-- From: file:/Users/catalina/Desktop/Gift%20Xchange_sound_added/Gift%20Exchange/app/src/main/res/layout/offers_content.xml -->

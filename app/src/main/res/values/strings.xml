@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gift Exchange</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="final_gift_box_title">Your gift box ready!</string>
+    <string name="final_gift_box_instruction">Press long on item to change</string>
+
+    <string name="mic_instruction">Tap on mic to record your message</string>
+    <string name="mic_recording">Tap on mic to stop recording</string>
+
+    <string name="filepath">/sdcard/Gift.txt</string>
+
+    
+    <string name="offer_tab_title">my offers</string>
+	<string name="offer_tab_text_you">You have</string>
+	<string name="offer_tab_text_personalized">fabulous designs here</string>
+	<string name="offer_tab_text_swipe">Swipe left to see all</string>
+	<string name="offer_no_media_message">Offers not available</string>
+	<string name="offer_numbers">4</string>
+	<string name="file_path">/sdcard/Gift.catalina</string>
+    <string name="title_activity_gift_dispatch">GiftDispatch</string>
+    <string name="textview_record_time_left">Time Remaining: </string>
+    <string name="title_activity_splash_screen">Gift Exchange</string>
+	
+</resources>

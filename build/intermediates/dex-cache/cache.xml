@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/catalina/Documents/ADT Bundle/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/catalina/Desktop/Gift Xchange_sound_added/Gift Exchange/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-a31d7b93316d5efde8ae95a95e2ff922f2b3d4c1.jar" />
+    </item>
+    <item
+        jar="/Users/catalina/Desktop/Gift Xchange_sound_added/Gift Exchange/app/libs/nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="/Users/catalina/Desktop/Gift Xchange_sound_added/Gift Exchange/app/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-71f8ae7f0771ea2ca1ab3522f07f5b8123cac178.jar" />
+    </item>
+
+</items>
